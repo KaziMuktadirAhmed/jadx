@@ -45,13 +45,13 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: codeql-results
-        path: /home/runner/work/jadex/results/
+        path: /home/runner/work/jadx/results/
 
     - name: Download Artifact
       uses: actions/download-artifact@v2
       with:
         name: codeql-results # Specify the name of the artifact you want to download
-        path: /home/runner/work/jadex/results/ # Specify the directory where you want to save the downloaded artifact
+        path: /home/runner/work/jadx/results/ # Specify the directory where you want to save the downloaded artifact
 
     - name: Print Run ID
       run: echo "workflow run id ${{github.run_id}}
