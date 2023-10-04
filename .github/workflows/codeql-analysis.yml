@@ -54,4 +54,4 @@ jobs:
         path: /home/runner/work/jadx/results/ # Specify the directory where you want to save the downloaded artifact
 
     - name: Print Run ID
-      run: echo "workflow run id ${{github.run_id}}
+      run: echo "workflow run id ${{github.run_id}}"
